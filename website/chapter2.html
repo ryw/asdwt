@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Getting Started with Tembo - AI Software Engineering with Tembo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chapter 2: Getting Started with Tembo</h1>
+            <nav>
+                <a href="index.html">&larr; Back to Table of Contents</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="chapter-content">
+                <h2>Installing and Configuring Tembo</h2>
+                <p>Getting started with Tembo is designed to be straightforward, but proper configuration is crucial for maximizing your team's productivity. This section will walk you through the installation process and essential configuration steps that will set the foundation for successful AI-assisted development.</p>
+                
+                <h3>Prerequisites</h3>
+                <p>Before installing Tembo, ensure your development environment meets these requirements:</p>
+                <ul>
+                    <li>Node.js 18 or higher installed on your system</li>
+                    <li>Git configured with your credentials</li>
+                    <li>Access to your project repository with appropriate permissions</li>
+                    <li>A supported IDE or text editor (VS Code, IntelliJ, or similar)</li>
+                </ul>
+
+                <h3>Installation Process</h3>
+                <p>Tembo can be installed through multiple methods depending on your team's preferences and infrastructure setup:</p>
+                
+                <h4>Method 1: npm Installation</h4>
+                <p>For most JavaScript/TypeScript projects, the npm installation method provides the fastest setup:</p>
+                <pre><code>npm install -g @tembo/cli
+tembo init</code></pre>
+                
+                <h4>Method 2: Docker Setup</h4>
+                <p>For teams preferring containerized environments or working with multiple language ecosystems:</p>
+                <pre><code>docker pull tembo/ai-engineer:latest
+docker run -v $(pwd):/workspace tembo/ai-engineer init</code></pre>
+
+                <h2>Your First AI-Assisted Feature</h2>
+                <p>The best way to understand Tembo's capabilities is through hands-on experience. Let's walk through implementing a simple but complete feature that demonstrates the AI-assisted development workflow.</p>
+                
+                <h3>Setting Up the Example Project</h3>
+                <p>We'll create a user authentication system—a common feature that involves multiple components and demonstrates Tembo's ability to work across different parts of your codebase:</p>
+                
+                <h4>Step 1: Feature Planning</h4>
+                <p>Start by describing your feature to Tembo in natural language:</p>
+                <blockquote>
+                    <p>"I need to implement user authentication for my web application. This should include user registration, login, logout, and session management. The system should be secure and follow current best practices."</p>
+                </blockquote>
+                
+                <h4>Step 2: AI-Generated Implementation Plan</h4>
+                <p>Tembo analyzes your requirements and existing codebase to create a comprehensive implementation plan:</p>
+                <ul>
+                    <li>Database schema modifications for user storage</li>
+                    <li>Backend API endpoints for authentication operations</li>
+                    <li>Frontend components for login and registration forms</li>
+                    <li>Middleware for session management and route protection</li>
+                    <li>Unit and integration tests for all components</li>
+                </ul>
+
+                <h4>Step 3: Iterative Development</h4>
+                <p>Rather than generating all code at once, Tembo works iteratively, allowing you to review and approve each component:</p>
+                <ol>
+                    <li>Database schema and models</li>
+                    <li>Authentication middleware and utilities</li>
+                    <li>API endpoints with proper error handling</li>
+                    <li>Frontend components with form validation</li>
+                    <li>Integration tests covering the complete flow</li>
+                </ol>
+
+                <h2>Understanding Tembo's Capabilities and Limitations</h2>
+                <p>To work effectively with Tembo, it's essential to understand both what it excels at and where human oversight remains critical.</p>
+                
+                <h3>Core Strengths</h3>
+                <ul>
+                    <li><strong>Pattern Recognition:</strong> Tembo excels at identifying and implementing common programming patterns</li>
+                    <li><strong>Code Consistency:</strong> Maintains consistent coding style across your entire project</li>
+                    <li><strong>Comprehensive Testing:</strong> Generates thorough test suites including edge cases</li>
+                    <li><strong>Documentation Generation:</strong> Creates detailed documentation that stays in sync with code changes</li>
+                    <li><strong>Refactoring Safety:</strong> Performs large-scale refactoring while preserving functionality</li>
+                </ul>
+
+                <h3>Areas Requiring Human Guidance</h3>
+                <ul>
+                    <li><strong>Business Logic Validation:</strong> Complex domain-specific rules need human verification</li>
+                    <li><strong>Architecture Decisions:</strong> High-level system design choices benefit from human experience</li>
+                    <li><strong>User Experience:</strong> Interface design and user flow optimization require human insight</li>
+                    <li><strong>Performance Trade-offs:</strong> Complex performance optimization decisions need human evaluation</li>
+                </ul>
+
+                <h2>Setting Up Your Development Environment</h2>
+                <p>Proper environment configuration is crucial for seamless AI-assisted development. This section covers the essential setup steps for maximum productivity.</p>
+                
+                <h3>IDE Integration</h3>
+                <p>Tembo integrates with popular development environments to provide real-time assistance:</p>
+                
+                <h4>VS Code Extension</h4>
+                <p>The VS Code extension provides the most comprehensive Tembo experience:</p>
+                <ul>
+                    <li>Real-time code suggestions and completions</li>
+                    <li>Integrated chat interface for feature requests</li>
+                    <li>Automatic code review and improvement suggestions</li>
+                    <li>Seamless integration with existing workflows</li>
+                </ul>
+
+                <h4>Command Line Interface</h4>
+                <p>For teams preferring terminal-based workflows, the CLI provides full functionality:</p>
+                <pre><code>tembo generate component UserProfile
+tembo review --file src/components/UserProfile.tsx
+tembo test --coverage --watch</code></pre>
+
+                <h3>Team Configuration</h3>
+                <p>Setting up Tembo for team collaboration requires coordination around coding standards, review processes, and integration workflows:</p>
+                
+                <h4>Shared Configuration</h4>
+                <p>Create a <code>.tembo.json</code> file in your project root to ensure consistent behavior across team members:</p>
+                <pre><code>{
+  "codeStyle": "typescript-strict",
+  "testFramework": "jest",
+  "reviewLevel": "thorough",
+  "integrations": {
+    "linear": true,
+    "sentry": true,
+    "github": true
+  }
+}</code></pre>
+
+                <h4>Code Review Integration</h4>
+                <p>Configure Tembo to participate in your existing code review process:</p>
+                <ul>
+                    <li>Automatic pull request creation with detailed descriptions</li>
+                    <li>AI-powered code review comments and suggestions</li>
+                    <li>Integration with GitHub, GitLab, or Bitbucket workflows</li>
+                    <li>Customizable review criteria and quality gates</li>
+                </ul>
+
+                <p>By the end of this chapter, you'll have Tembo fully configured and ready to assist with your development tasks. The next chapter will focus on the mindset shift required to work effectively with AI as a development partner.</p>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="chapter1.html">&larr; Previous: Chapter 1</a>
+                <span> | </span>
+                <a href="index.html">Back to Table of Contents</a>
+                <span> | </span>
+                <a href="#chapter3">Next: Chapter 3 &rarr;</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
