@@ -1,4 +1,4 @@
-# AI Software Engineer Integration Guide for Product Teams
+# AI Software Engineering with Tembo: Collaborative Development in the AI Era
 
 *How to Add an AI Software Engineer to Your Team and Double Your Product Throughput*
 
