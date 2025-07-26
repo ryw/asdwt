@@ -17,130 +17,120 @@
 
         <main>
             <section class="chapter-content">
-                <h2>Installing and Configuring Tembo</h2>
-                <p>Getting started with Tembo is designed to be straightforward, but proper configuration is crucial for maximizing your team's productivity. This section will walk you through the installation process and essential configuration steps that will set the foundation for successful AI-assisted development.</p>
-                
-                <h3>Prerequisites</h3>
-                <p>Before installing Tembo, ensure your development environment meets these requirements:</p>
-                <ul>
-                    <li>Node.js 18 or higher installed on your system</li>
-                    <li>Git configured with your credentials</li>
-                    <li>Access to your project repository with appropriate permissions</li>
-                    <li>A supported IDE or text editor (VS Code, IntelliJ, or similar)</li>
-                </ul>
+                <h2>Create Your First AI-Assisted Feature in GitHub</h2>
+                <p>The best way to understand Tembo's power is by experiencing the complete value loop of AI-assisted software development: conceive → define → create → accept. This chapter will guide you through creating your first feature using Tembo's GitHub integration.</p>
 
-                <h3>Installation Process</h3>
-                <p>Tembo can be installed through multiple methods depending on your team's preferences and infrastructure setup:</p>
+                <h2>Step 1: Choose or Create a GitHub Repository</h2>
+                <p>To get started with Tembo, you'll need a GitHub repository to work with. We recommend creating a new repository specifically for this tutorial to keep things clean and focused.</p>
                 
-                <h4>Method 1: npm Installation</h4>
-                <p>For most JavaScript/TypeScript projects, the npm installation method provides the fastest setup:</p>
-                <pre><code>npm install -g @tembo/cli
-tembo init</code></pre>
+                <h3>Creating a New Repository</h3>
+                <p>Follow these steps to create a new GitHub repository:</p>
+                <ol>
+                    <li>Navigate to <a href="https://github.com/new" target="_blank">github.com/new</a></li>
+                    <li>Choose any name you like for your repository (e.g., "my-first-tembo-project", "job-board-features", etc.)</li>
+                    <li><strong>Important:</strong> Check the "Add a README file" option to initialize your repository</li>
+                    <li>Leave the repository public for easier setup (you can change this later)</li>
+                    <li>Click "Create repository"</li>
+                </ol>
                 
-                <h4>Method 2: Docker Setup</h4>
-                <p>For teams preferring containerized environments or working with multiple language ecosystems:</p>
-                <pre><code>docker pull tembo/ai-engineer:latest
-docker run -v $(pwd):/workspace tembo/ai-engineer init</code></pre>
+                <p>Your new repository will be created with a basic README.md file, providing the perfect starting point for your first AI-assisted feature.</p>
 
-                <h2>Your First AI-Assisted Feature</h2>
-                <p>The best way to understand Tembo's capabilities is through hands-on experience. Let's walk through implementing a simple but complete feature that demonstrates the AI-assisted development workflow.</p>
+                <h2>Step 2: Sign Up for Tembo and Connect Your Repository</h2>
+                <p>Now that you have a GitHub repository, it's time to connect it to Tembo and unlock AI-powered development capabilities.</p>
                 
-                <h3>Setting Up the Example Project</h3>
-                <p>We'll create a user authentication system—a common feature that involves multiple components and demonstrates Tembo's ability to work across different parts of your codebase:</p>
+                <h3>Tembo Account Setup</h3>
+                <ol>
+                    <li>Visit <a href="https://tembo.io" target="_blank">tembo.io</a> and click "Sign Up"</li>
+                    <li>Sign up using your GitHub account for seamless integration</li>
+                    <li>Complete the onboarding process</li>
+                    <li>When prompted, connect your newly created repository to Tembo</li>
+                    <li>Grant the necessary permissions for Tembo to create branches and pull requests</li>
+                </ol>
                 
-                <h4>Step 1: Feature Planning</h4>
-                <p>Start by describing your feature to Tembo in natural language:</p>
+                <p>Once connected, Tembo will have access to your repository and can begin assisting with your development tasks.</p>
+
+                <h2>Step 3: Your First AI-Assisted Feature</h2>
+                <p>Now for the exciting part—let's use Tembo to create a meaningful feature that demonstrates the full AI-assisted development workflow.</p>
+                
+                <h3>Example Task: Job Board Feature List</h3>
+                <p>We'll create a comprehensive feature list for a job board website, organized by priority. This is a perfect example of how AI can help with product planning and feature definition.</p>
+                
+                <h4>Creating the Task in Tembo</h4>
+                <ol>
+                    <li>Log into your Tembo dashboard</li>
+                    <li>Navigate to your connected repository</li>
+                    <li>Click "Create Task" to open the task creation window</li>
+                    <li>Copy and paste this prompt into the task window:</li>
+                </ol>
+                
                 <blockquote>
-                    <p>"I need to implement user authentication for my web application. This should include user registration, login, logout, and session management. The system should be secure and follow current best practices."</p>
+                    <p><strong>Task Prompt:</strong><br>
+                    "Generate a comprehensive feature list for a job board website, and add this list to the repository. Prioritize the features into 3 priority buckets: High Priority (must-have core features), Medium Priority (important but not critical), and Low Priority (nice-to-have enhancements). Include features for both job seekers and employers. Format the output as a well-structured markdown file that can serve as a product roadmap."</p>
                 </blockquote>
                 
-                <h4>Step 2: AI-Generated Implementation Plan</h4>
-                <p>Tembo analyzes your requirements and existing codebase to create a comprehensive implementation plan:</p>
+                <h4>Understanding the AI Process</h4>
+                <p>After submitting your task, Tembo will:</p>
                 <ul>
-                    <li>Database schema modifications for user storage</li>
-                    <li>Backend API endpoints for authentication operations</li>
-                    <li>Frontend components for login and registration forms</li>
-                    <li>Middleware for session management and route protection</li>
-                    <li>Unit and integration tests for all components</li>
+                    <li><strong>Conceive:</strong> Analyze your requirements and understand the scope</li>
+                    <li><strong>Define:</strong> Break down the task into specific, actionable components</li>
+                    <li><strong>Create:</strong> Generate the feature list and create a new file in your repository</li>
+                    <li><strong>Present:</strong> Submit the work as a pull request for your review</li>
                 </ul>
 
-                <h4>Step 3: Iterative Development</h4>
-                <p>Rather than generating all code at once, Tembo works iteratively, allowing you to review and approve each component:</p>
+                <h2>Step 4: Review the Pull Request</h2>
+                <p>Once Tembo completes your task, you'll receive a pull request containing the generated feature list. This is where the collaborative aspect of AI-assisted development shines.</p>
+                
+                <h3>Reviewing AI-Generated Code</h3>
+                <p>Navigate to your repository's "Pull Requests" tab to see Tembo's work. You'll find:</p>
+                <ul>
+                    <li>A detailed pull request description explaining what was created</li>
+                    <li>The new markdown file with your job board feature list</li>
+                    <li>Features organized into the three priority buckets you requested</li>
+                </ul>
+                
+                <h3>Requesting Changes</h3>
+                <p>If you want to modify or expand the feature list, you can:</p>
+                <ul>
+                    <li>Add comments directly to the pull request</li>
+                    <li>Tag <code>@tembo</code> in your comments to request specific changes</li>
+                    <li>Ask for additional features, different prioritization, or formatting changes</li>
+                </ul>
+                
+                <p>For example, you might comment: <em>"@tembo Please add mobile app features to the feature list and include user authentication requirements for each priority bucket."</em></p>
+
+                <h2>Step 5: Merge the Pull Request</h2>
+                <p>Once you're satisfied with the feature list, it's time to complete the development cycle by merging the pull request.</p>
+                
+                <h3>The Merge Process</h3>
                 <ol>
-                    <li>Database schema and models</li>
-                    <li>Authentication middleware and utilities</li>
-                    <li>API endpoints with proper error handling</li>
-                    <li>Frontend components with form validation</li>
-                    <li>Integration tests covering the complete flow</li>
+                    <li>Review the final changes in the pull request</li>
+                    <li>Click "Merge pull request" to accept the AI-generated work</li>
+                    <li>Choose your preferred merge method (merge commit, squash and merge, or rebase and merge)</li>
+                    <li>Add a merge commit message if desired</li>
+                    <li>Click "Confirm merge"</li>
                 </ol>
-
-                <h2>Understanding Tembo's Capabilities and Limitations</h2>
-                <p>To work effectively with Tembo, it's essential to understand both what it excels at and where human oversight remains critical.</p>
                 
-                <h3>Core Strengths</h3>
+                <h3>Completing the Value Loop</h3>
+                <p>Congratulations! You've just completed your first full cycle of AI-assisted software development:</p>
                 <ul>
-                    <li><strong>Pattern Recognition:</strong> Tembo excels at identifying and implementing common programming patterns</li>
-                    <li><strong>Code Consistency:</strong> Maintains consistent coding style across your entire project</li>
-                    <li><strong>Comprehensive Testing:</strong> Generates thorough test suites including edge cases</li>
-                    <li><strong>Documentation Generation:</strong> Creates detailed documentation that stays in sync with code changes</li>
-                    <li><strong>Refactoring Safety:</strong> Performs large-scale refactoring while preserving functionality</li>
+                    <li>✅ <strong>Conceive:</strong> You identified the need for a job board feature list</li>
+                    <li>✅ <strong>Define:</strong> You provided clear requirements and prioritization structure</li>
+                    <li>✅ <strong>Create:</strong> Tembo generated comprehensive, well-organized content</li>
+                    <li>✅ <strong>Accept:</strong> You reviewed, potentially refined, and merged the results</li>
                 </ul>
 
-                <h3>Areas Requiring Human Guidance</h3>
-                <ul>
-                    <li><strong>Business Logic Validation:</strong> Complex domain-specific rules need human verification</li>
-                    <li><strong>Architecture Decisions:</strong> High-level system design choices benefit from human experience</li>
-                    <li><strong>User Experience:</strong> Interface design and user flow optimization require human insight</li>
-                    <li><strong>Performance Trade-offs:</strong> Complex performance optimization decisions need human evaluation</li>
-                </ul>
-
-                <h2>Setting Up Your Development Environment</h2>
-                <p>Proper environment configuration is crucial for seamless AI-assisted development. This section covers the essential setup steps for maximum productivity.</p>
+                <h2>What You've Accomplished</h2>
+                <p>Through this hands-on exercise, you've experienced the core benefits of AI-assisted development:</p>
                 
-                <h3>IDE Integration</h3>
-                <p>Tembo integrates with popular development environments to provide real-time assistance:</p>
-                
-                <h4>VS Code Extension</h4>
-                <p>The VS Code extension provides the most comprehensive Tembo experience:</p>
                 <ul>
-                    <li>Real-time code suggestions and completions</li>
-                    <li>Integrated chat interface for feature requests</li>
-                    <li>Automatic code review and improvement suggestions</li>
-                    <li>Seamless integration with existing workflows</li>
+                    <li><strong>Speed:</strong> Generated comprehensive features in minutes, not hours</li>
+                    <li><strong>Completeness:</strong> AI considered aspects you might have initially overlooked</li>
+                    <li><strong>Structure:</strong> Received well-organized, professional documentation</li>
+                    <li><strong>Collaboration:</strong> Maintained control through the review and approval process</li>
+                    <li><strong>Integration:</strong> Seamlessly worked within your existing GitHub workflow</li>
                 </ul>
-
-                <h4>Command Line Interface</h4>
-                <p>For teams preferring terminal-based workflows, the CLI provides full functionality:</p>
-                <pre><code>tembo generate component UserProfile
-tembo review --file src/components/UserProfile.tsx
-tembo test --coverage --watch</code></pre>
-
-                <h3>Team Configuration</h3>
-                <p>Setting up Tembo for team collaboration requires coordination around coding standards, review processes, and integration workflows:</p>
                 
-                <h4>Shared Configuration</h4>
-                <p>Create a <code>.tembo.json</code> file in your project root to ensure consistent behavior across team members:</p>
-                <pre><code>{
-  "codeStyle": "typescript-strict",
-  "testFramework": "jest",
-  "reviewLevel": "thorough",
-  "integrations": {
-    "linear": true,
-    "sentry": true,
-    "github": true
-  }
-}</code></pre>
-
-                <h4>Code Review Integration</h4>
-                <p>Configure Tembo to participate in your existing code review process:</p>
-                <ul>
-                    <li>Automatic pull request creation with detailed descriptions</li>
-                    <li>AI-powered code review comments and suggestions</li>
-                    <li>Integration with GitHub, GitLab, or Bitbucket workflows</li>
-                    <li>Customizable review criteria and quality gates</li>
-                </ul>
-
-                <p>By the end of this chapter, you'll have Tembo fully configured and ready to assist with your development tasks. The next chapter will focus on the mindset shift required to work effectively with AI as a development partner.</p>
+                <p>This foundational experience prepares you for more complex AI-assisted development tasks. In the next chapter, we'll explore advanced techniques for collaborating with AI on actual code implementation.</p>
             </section>
         </main>
 
