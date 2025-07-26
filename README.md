@@ -1,16 +1,18 @@
-# AI Software Engineering with Tembo: Collaborative Development in the AI Era
+# AI Software Engineer Integration Guide for Product Teams
 
-*Building Modern Applications with AI-Powered Development Teams*
+*How to Add an AI Software Engineer to Your Team and Double Your Product Throughput*
 
 ## What You'll Learn
 
-This book will guide you through the revolutionary shift in software development brought by AI agents like Tembo. You'll learn how to collaborate effectively with AI engineers, streamline your development workflow, and build better software faster than ever before.
+You'll learn how to add an AI Software Engineer to your team, that sits between non-technical and technical team members. This agent can handle the work that your engineers don't really like to do, but it can also take a first cut at any software engineering task. Adopting an AI teammate can double your team's product and software throughput.
 
 ## Who This Book Is For
 
-This book is for software engineers, team leads, and engineering managers who want to harness the power of AI in their development process. Whether you're a seasoned developer or new to AI-assisted programming, you'll find practical strategies for integrating AI agents into your workflow.
+This book is for the whole product team, not just software engineers and engineering managers.
 
 ## Prerequisites
+
+**Attention non-technical people** - you, yes you need to familiarize yourself with these tools, to maximize your organization's benefit of working with AI Software Engineering agents like Tembo. We're not asking you to learn to code, but you will have to up your tech game.
 
 - Basic understanding of software development concepts
 - Familiarity with Git and GitHub workflows
