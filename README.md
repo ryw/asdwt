@@ -16,11 +16,11 @@ This project contains resources and documentation for learning how to effectivel
 
 ## Getting Started
 
-For the full content and detailed table of contents, visit the [website](website/index.html).
+For the full content and detailed table of contents, visit the [website](https://ryw.github.io/asdwt/).
 
 ## Resources
 
 - [Tembo Documentation](https://tembo.io)
-- [Example Code Repository](https://github.com/tembo/ai-software-engineering-examples)
-- [Video Tutorials](https://learn.tembo.io)
-- [Community Forum](https://community.tembo.io)
+- [Example Code Repository](https://github.com/tembo/tembo/tree/main/examples)
+- [Tutorials](https://docs.tembo.io/welcome)
+- [Community Forum](https://www.reddit.com/r/tembo_io/)
