@@ -16,7 +16,7 @@ This project contains resources and documentation for learning how to effectivel
 
 ## Getting Started
 
-For the full content and detailed table of contents, visit the [website](website/index.html).
+For the full content and detailed table of contents, visit the [website](https://ryw.github.io/asdwt/).
 
 ## Resources
 
