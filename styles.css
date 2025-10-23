@@ -36,13 +36,6 @@ header h1 {
     line-height: 48px;
 }
 
-header h2 {
-    font-size: 1.3em;
-    color: #7f8c8d;
-    font-weight: normal;
-    font-style: italic;
-}
-
 /* Section styles */
 section {
     margin-bottom: 35px;
@@ -56,31 +49,9 @@ h3 {
     padding-bottom: 5px;
 }
 
-h4 {
-    font-size: 1.3em;
-    color: #34495e;
-    margin: 25px 0 15px 0;
-    font-weight: bold;
-}
-
-h5 {
-    font-size: 1.1em;
-    color: #2c3e50;
-    margin: 20px 0 10px 0;
-    font-weight: bold;
-}
-
 p {
     margin-bottom: 15px;
     text-align: justify;
-}
-
-.attention-non-technical {
-    background-color: #fff3cd;
-    border: 1px solid #ffc107;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 20px 0;
 }
 
 /* List styles */
@@ -93,34 +64,6 @@ li {
     margin-bottom: 5px;
 }
 
-.contents ul {
-    margin-left: 30px;
-}
-
-.contents .part {
-    margin-bottom: 30px;
-}
-
-.contents .chapter {
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
-.contents .chapter ul {
-    margin-top: 8px;
-}
-
-.contents .chapter li {
-    color: #555;
-    margin-bottom: 3px;
-}
-
-.appendices {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #e0e0e0;
-}
-
 /* Link styles */
 a {
     color: #3498db;
@@ -130,28 +73,6 @@ a {
 a:hover {
     text-decoration: underline;
     color: #2980b9;
-}
-
-.resources ul {
-    list-style-type: none;
-    margin-left: 0;
-}
-
-.resources li {
-    margin-bottom: 8px;
-}
-
-.resources a {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #ecf0f1;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-}
-
-.resources a:hover {
-    background-color: #d5dbdb;
-    text-decoration: none;
 }
 
 /* Footer styles */
@@ -176,34 +97,5 @@ footer p {
     
     header h1 {
         font-size: 2em;
-    }
-    
-    header h2 {
-        font-size: 1.1em;
-    }
-    
-    .contents .chapter {
-        margin-left: 10px;
-    }
-}
-
-/* Print styles */
-@media print {
-    body {
-        font-size: 12pt;
-        line-height: 1.4;
-    }
-    
-    .container {
-        max-width: none;
-        padding: 0;
-    }
-    
-    header {
-        page-break-after: avoid;
-    }
-    
-    .part, .chapter {
-        page-break-inside: avoid;
     }
 }

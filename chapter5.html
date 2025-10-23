@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 5: Error Monitoring with Sentry - AI Software Engineering with Tembo</title>
+    <title>Chapter 5</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Chapter 5: Error Monitoring with Sentry</h1>
+            <h1>Chapter 5</h1>
             <nav>
                 <a href="index.html">&larr; Back to Table of Contents</a>
             </nav>
@@ -17,249 +17,8 @@
 
         <main>
             <section class="chapter-content">
-                <h2>Integrating Sentry for Comprehensive Monitoring</h2>
-                <p>Error monitoring transforms from a reactive debugging tool into a proactive development intelligence system when combined with AI capabilities. Sentry's comprehensive error tracking, performance monitoring, and alerting capabilities provide the foundation for AI-driven incident response and code quality improvement.</p>
-                
-                <p>The integration between Tembo and Sentry creates an automated feedback loop where production issues directly inform development priorities, and AI can often resolve common problems before they impact users significantly.</p>
-
-                <h3>Setting Up Sentry Integration</h3>
-                <p>Connecting Tembo to your Sentry organization enables sophisticated error analysis and automated response capabilities:</p>
-                
-                <ol>
-                    <li><strong>Sentry Configuration:</strong> Install and configure Sentry SDKs in your applications</li>
-                    <li><strong>Integration Token:</strong> Generate an organization integration token with appropriate permissions</li>
-                    <li><strong>Project Mapping:</strong> Connect Sentry projects to corresponding code repositories and Linear projects</li>
-                    <li><strong>Alert Configuration:</strong> Set up intelligent alerting rules that trigger AI analysis</li>
-                    <li><strong>Performance Baselines:</strong> Establish performance thresholds for proactive monitoring</li>
-                </ol>
-
-                <h3>Understanding Error Context</h3>
-                <p>Tembo analyzes Sentry error reports with deep contextual understanding that goes beyond traditional monitoring approaches:</p>
-                
-                <h4>Multi-Dimensional Error Analysis</h4>
-                <ul>
-                    <li><strong>Code Impact Assessment:</strong> Identifies which components and functions are most affected</li>
-                    <li><strong>User Impact Quantification:</strong> Calculates the scope of user experience degradation</li>
-                    <li><strong>Historical Pattern Recognition:</strong> Connects current errors to past incidents and their resolutions</li>
-                    <li><strong>Dependency Mapping:</strong> Understands how errors propagate through system components</li>
-                </ul>
-
-                <h4>Intelligent Error Grouping</h4>
-                <p>While Sentry groups similar errors, Tembo adds additional intelligence by:</p>
-                <ul>
-                    <li>Identifying root cause patterns across seemingly unrelated errors</li>
-                    <li>Recognizing cascading failures from single source issues</li>
-                    <li>Correlating errors with recent code changes and deployments</li>
-                    <li>Understanding the business logic context of technical errors</li>
-                </ul>
-
-                <h2>AI-Driven Error Analysis and Resolution</h2>
-                <p>When Sentry detects new errors or performance issues, Tembo immediately begins comprehensive analysis that often leads to automatic resolution proposals or implemented fixes.</p>
-
-                <h3>Automated Error Triage</h3>
-                <p>Tembo performs intelligent triage on incoming Sentry alerts, categorizing and prioritizing them based on multiple factors:</p>
-                
-                <h4>Priority Assessment Criteria</h4>
-                <ul>
-                    <li><strong>User Impact Severity:</strong> Number of affected users and critical user journeys</li>
-                    <li><strong>Error Frequency and Trend:</strong> Rate of occurrence and whether it's increasing</li>
-                    <li><strong>System Criticality:</strong> Importance of affected components to overall system function</li>
-                    <li><strong>Resolution Complexity:</strong> Estimated effort required for different resolution approaches</li>
-                    <li><strong>Business Priority:</strong> Impact on revenue-generating or critical business functions</li>
-                </ul>
-
-                <h4>Automated Classification</h4>
-                <p>Each error receives automatic classification that guides response strategy:</p>
-                <ul>
-                    <li><strong>Critical/Immediate:</strong> System-down scenarios requiring instant human attention</li>
-                    <li><strong>High/AI-Resolvable:</strong> Significant issues that AI can likely fix automatically</li>
-                    <li><strong>Medium/Analysis Required:</strong> Issues needing deeper investigation before resolution</li>
-                    <li><strong>Low/Monitoring:</strong> Problems to track but not immediately actionable</li>
-                </ul>
-
-                <h3>Root Cause Analysis</h3>
-                <p>Tembo's approach to root cause analysis combines traditional debugging techniques with AI-powered pattern recognition:</p>
-                
-                <h4>Code Analysis Integration</h4>
-                <p>For each error, Tembo examines:</p>
-                <ul>
-                    <li><strong>Recent Changes:</strong> Git commits and pull requests that might have introduced the issue</li>
-                    <li><strong>Code Complexity:</strong> Functions with high cyclomatic complexity that are error-prone</li>
-                    <li><strong>Test Coverage:</strong> Areas with insufficient testing that correlate with errors</li>
-                    <li><strong>Dependency Updates:</strong> External library changes that might cause compatibility issues</li>
-                </ul>
-
-                <h4>Environmental Correlation</h4>
-                <p>Beyond code analysis, Tembo considers environmental factors:</p>
-                <ul>
-                    <li>Infrastructure changes and scaling events</li>
-                    <li>Database performance and capacity patterns</li>
-                    <li>Third-party service availability and response times</li>
-                    <li>Traffic patterns and load distribution</li>
-                </ul>
-
-                <h3>Automated Fix Implementation</h3>
-                <p>For errors that match known patterns or have clear resolution paths, Tembo can implement fixes automatically:</p>
-                
-                <h4>Common Auto-Fix Scenarios</h4>
-                <ul>
-                    <li><strong>Null Pointer Exceptions:</strong> Adding appropriate null checks and defensive programming</li>
-                    <li><strong>Type Errors:</strong> Correcting type mismatches and improving type validation</li>
-                    <li><strong>Resource Leaks:</strong> Adding proper cleanup and resource management</li>
-                    <li><strong>Configuration Issues:</strong> Updating configuration values based on error context</li>
-                    <li><strong>API Integration Failures:</strong> Implementing retry logic and error handling</li>
-                </ul>
-
-                <h4>Fix Validation Process</h4>
-                <p>Before deploying automated fixes, Tembo validates them through:</p>
-                <ul>
-                    <li>Comprehensive test suite execution</li>
-                    <li>Static code analysis for introduced risks</li>
-                    <li>Performance impact assessment</li>
-                    <li>Compatibility verification with existing features</li>
-                </ul>
-
-                <h2>Proactive Bug Detection and Fixes</h2>
-                <p>The integration enables proactive identification of potential issues before they manifest as user-facing problems.</p>
-
-                <h3>Predictive Error Analysis</h3>
-                <p>Tembo analyzes patterns in your Sentry data to predict potential future issues:</p>
-                
-                <h4>Leading Indicators</h4>
-                <ul>
-                    <li><strong>Performance Degradation:</strong> Gradual slowdowns that precede timeout errors</li>
-                    <li><strong>Memory Usage Patterns:</strong> Growing memory consumption indicating potential leaks</li>
-                    <li><strong>API Response Trends:</strong> Increasing error rates from external services</li>
-                    <li><strong>Database Query Performance:</strong> Queries showing declining performance over time</li>
-                </ul>
-
-                <h4>Preventive Measures</h4>
-                <p>Based on predictive analysis, Tembo can implement preventive fixes:</p>
-                <ul>
-                    <li>Optimizing queries before they become performance bottlenecks</li>
-                    <li>Adding monitoring and alerting for emerging issues</li>
-                    <li>Implementing circuit breakers for unreliable external services</li>
-                    <li>Adding resource limits and cleanup procedures</li>
-                </ul>
-
-                <h3>Code Quality Improvement</h3>
-                <p>Sentry data provides insights into code quality issues that may not be immediately apparent:</p>
-                
-                <h4>Error-Prone Code Identification</h4>
-                <ul>
-                    <li><strong>Hotspot Analysis:</strong> Functions and modules with disproportionate error rates</li>
-                    <li><strong>Complexity Correlation:</strong> High-complexity code that generates frequent errors</li>
-                    <li><strong>Maintenance Burden:</strong> Components requiring frequent error-related fixes</li>
-                    <li><strong>Documentation Gaps:</strong> Areas where errors correlate with poor documentation</li>
-                </ul>
-
-                <h4>Systematic Improvements</h4>
-                <p>Tembo can implement systematic code quality improvements:</p>
-                <ul>
-                    <li>Refactoring error-prone functions for better maintainability</li>
-                    <li>Adding comprehensive error handling and logging</li>
-                    <li>Implementing input validation and sanitization</li>
-                    <li>Creating better abstractions for complex operations</li>
-                </ul>
-
-                <h2>Performance Monitoring and Optimization</h2>
-                <p>Beyond error detection, the Sentry-Tembo integration provides sophisticated performance monitoring and optimization capabilities.</p>
-
-                <h3>Performance Baseline Management</h3>
-                <p>Tembo establishes and maintains performance baselines that evolve with your application:</p>
-                
-                <h4>Dynamic Baseline Calculation</h4>
-                <ul>
-                    <li><strong>Usage Pattern Recognition:</strong> Understanding normal vs. exceptional load patterns</li>
-                    <li><strong>Seasonal Adjustments:</strong> Accounting for predictable traffic variations</li>
-                    <li><strong>Feature Impact Assessment:</strong> How new features affect overall performance</li>
-                    <li><strong>Infrastructure Scaling Effects:</strong> Performance changes due to infrastructure modifications</li>
-                </ul>
-
-                <h4>Threshold Management</h4>
-                <p>Rather than static thresholds, Tembo implements intelligent alerting that considers:</p>
-                <ul>
-                    <li>Historical performance trends</li>
-                    <li>Current system load and capacity</li>
-                    <li>Business impact of performance changes</li>
-                    <li>Available optimization strategies</li>
-                </ul>
-
-                <h3>Automated Performance Optimization</h3>
-                <p>When performance issues are detected, Tembo can often implement optimizations automatically:</p>
-                
-                <h4>Database Optimization</h4>
-                <ul>
-                    <li><strong>Query Optimization:</strong> Rewriting inefficient queries for better performance</li>
-                    <li><strong>Index Recommendations:</strong> Suggesting and implementing database indexes</li>
-                    <li><strong>Connection Pooling:</strong> Optimizing database connection management</li>
-                    <li><strong>Caching Strategies:</strong> Implementing appropriate caching layers</li>
-                </ul>
-
-                <h4>Application-Level Optimizations</h4>
-                <ul>
-                    <li><strong>Algorithmic Improvements:</strong> Replacing inefficient algorithms with better alternatives</li>
-                    <li><strong>Memory Management:</strong> Optimizing object creation and garbage collection</li>
-                    <li><strong>Asynchronous Processing:</strong> Converting blocking operations to asynchronous patterns</li>
-                    <li><strong>Resource Utilization:</strong> Better CPU and memory usage patterns</li>
-                </ul>
-
-                <h2>Integration Workflow Patterns</h2>
-                <p>Successful Sentry-Tembo integration relies on established workflow patterns that balance automation with human oversight.</p>
-
-                <h3>Error Response Workflows</h3>
-                <p>Different types of errors trigger different response workflows:</p>
-                
-                <h4>Critical Error Response</h4>
-                <ol>
-                    <li><strong>Instant Notification:</strong> Immediate alerts to on-call team members</li>
-                    <li><strong>Impact Assessment:</strong> AI analysis of user and system impact</li>
-                    <li><strong>Rollback Evaluation:</strong> Automatic assessment of rollback feasibility</li>
-                    <li><strong>Mitigation Options:</strong> Presentation of immediate mitigation strategies</li>
-                    <li><strong>Human Handoff:</strong> Clear escalation to human decision-makers when needed</li>
-                </ol>
-
-                <h4>Standard Error Response</h4>
-                <ol>
-                    <li><strong>Automated Analysis:</strong> AI investigation of root causes and patterns</li>
-                    <li><strong>Fix Proposal:</strong> Suggested resolution approaches with confidence levels</li>
-                    <li><strong>Testing and Validation:</strong> Automated testing of proposed fixes</li>
-                    <li><strong>Implementation Review:</strong> Human review of AI-proposed changes</li>
-                    <li><strong>Deployment and Monitoring:</strong> Controlled rollout with monitoring</li>
-                </ol>
-
-                <h3>Performance Issue Workflows</h3>
-                <p>Performance degradation follows a different workflow optimized for systematic improvement:</p>
-                
-                <ol>
-                    <li><strong>Trend Analysis:</strong> Understanding performance change patterns over time</li>
-                    <li><strong>Bottleneck Identification:</strong> Pinpointing specific performance constraints</li>
-                    <li><strong>Optimization Strategy:</strong> Evaluating different improvement approaches</li>
-                    <li><strong>Impact Modeling:</strong> Predicting the effects of proposed optimizations</li>
-                    <li><strong>Staged Implementation:</strong> Rolling out performance improvements incrementally</li>
-                </ol>
-
-                <h2>Measuring Monitoring Success</h2>
-                <p>Track the effectiveness of your Sentry-Tembo integration with metrics that demonstrate both technical and business value:</p>
-
-                <h3>Technical Metrics</h3>
-                <ul>
-                    <li><strong>Mean Time to Detection (MTTD):</strong> How quickly issues are identified</li>
-                    <li><strong>Mean Time to Resolution (MTTR):</strong> Speed of issue resolution</li>
-                    <li><strong>Error Rate Trends:</strong> Overall application stability improvements</li>
-                    <li><strong>Performance Baseline Adherence:</strong> How consistently performance targets are met</li>
-                    <li><strong>Automated Fix Success Rate:</strong> Percentage of issues resolved without human intervention</li>
-                </ul>
-
-                <h3>Business Impact Metrics</h3>
-                <ul>
-                    <li><strong>User Experience Scores:</strong> Impact on user satisfaction and retention</li>
-                    <li><strong>Development Velocity:</strong> Time saved on debugging and maintenance</li>
-                    <li><strong>Incident Cost Reduction:</strong> Decreased cost of production issues</li>
-                    <li><strong>Proactive Issue Prevention:</strong> Problems caught before affecting users</li>
-                </ul>
-
-                <p>The combination of comprehensive error monitoring and AI-driven analysis creates a robust foundation for application reliability. In the next chapter, we'll explore how to extend this monitoring approach to database performance with Postgres integration.</p>
+                <h2>Content of Chapter 5</h2>
+                <p>This is the content of chapter 5. Replace this with your own content.</p>
             </section>
         </main>
 
@@ -268,8 +27,6 @@
                 <a href="chapter4.html">&larr; Previous: Chapter 4</a>
                 <span> | </span>
                 <a href="index.html">Back to Table of Contents</a>
-                <span> | </span>
-                <a href="#chapter6">Next: Chapter 6 &rarr;</a>
             </nav>
         </footer>
     </div>
