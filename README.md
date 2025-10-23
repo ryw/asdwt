@@ -1,26 +1,18 @@
-# AI Software Engineering with Tembo
+# Simple HTML Website
 
-A comprehensive guide to integrating AI software engineers into your development team and doubling your product throughput.
+This project is a simple website consisting of an index page and five chapters.
 
-## Overview
+## Table of Contents
 
-This project contains resources and documentation for learning how to effectively collaborate with AI software engineers like Tembo. The guide covers everything from basic AI-assisted development concepts to advanced integration practices with tools like Linear, Sentry, Postgres monitoring, and Mintlify documentation.
+*   [Index](index.html)
+*   [Chapter 1](chapter1.html)
+*   [Chapter 2](chapter2.html)
+*   [Chapter 3](chapter3.html)
+*   [Chapter 4](chapter4.html)
+*   [Chapter 5](chapter5.html)
 
-## What's Included
+## How to Use
 
-- Complete book content covering AI software engineering best practices
-- 18 chapters organized into 5 parts, from foundations to advanced topics
-- Practical integration guides for popular development tools
-- Real-world examples and workflows
-- Troubleshooting and configuration references
+To view the website, open the `index.html` file in your web browser. From there, you can navigate to the different chapters.
 
-## Getting Started
-
-For the full content and detailed table of contents, visit the [website](website/index.html).
-
-## Resources
-
-- [Tembo Documentation](https://tembo.io)
-- [Example Code Repository](https://github.com/tembo/ai-software-engineering-examples)
-- [Video Tutorials](https://learn.tembo.io)
-- [Community Forum](https://community.tembo.io)
+The website is styled using the `styles.css` file.
